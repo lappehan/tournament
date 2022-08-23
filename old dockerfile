@@ -1,0 +1,9 @@
+FROM openjdk:17-jdk-slim-buster
+
+COPY . /app
+
+WORKDIR /app
+
+EXPOSE 8189 
+
+CMD ["./mvnw", "spring-boot:run"]
